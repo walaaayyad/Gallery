@@ -13,28 +13,30 @@ body {
     background-color: rgba(149, 177, 199, 0.6);
 }
 .header {
-    height: 95vh;
+    height: 50vh;
     background-image:
         url(img/img1.jpg);/*Photo by Flying Carpet on Unsplash*/
     background-size: 100% 100%;
+    /*
     background-position: top;
     clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
-        
+      */  
 }
 .header-over {
     
     width: 70%;
-    height: 50%;
+    height: 35%;
     position: absolute;
     margin-left: 13%;
-    margin-top: 6%;
+    margin-top: 3%;
+    text-align: center;
     background-color:  rgba(43, 27, 97, 0.7);
     
 }
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
-    padding-top: 8%;
+    padding-top: 3%;
 
     backface-visibility: hidden;
 }
@@ -95,4 +97,91 @@ body {
         margin-left: 5%;
         margin-top: 2%;
     }
+}
+/* slide show style */
+
+.slideshow-container {
+	width: 800px;
+	position: relative;
+	margin: auto;
+}
+
+.numbers {
+	position: absolute;
+	top: 0;
+	color: #6d1111;
+	padding: 8px 12px;
+	font-size: 12px;
+}
+
+.myslides {
+    display: none;
+}
+
+.prev , .next {
+	position: absolute;
+	top: 50%;
+	font-size: 30px; /* size of cursor*/
+	font-weight: bold;
+	padding: 16px;
+	margin-top: -22px;
+	border-radius: 0 3px 3px 0;
+	color: #2d0a0a;
+	cursor: pointer;
+	transition: 0.6s ease; /* the action when click will be a bit slow*/
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,.next:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.caption {
+	text-align: center;
+	position: absolute;
+	bottom: -25px;
+	width: 94%;
+	color: #082750;
+	font-size: 30px;
+	padding: 8px 22px;
+}
+
+.dots {
+	width: 13px;
+	height: 13px;
+	background: gray;
+	display: inline-block;
+	border-radius: 50%;
+	cursor: pointer;
+	margin: 0 2px;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #333;
+}
+/* Fading animation */
+.fade {
+	animation-name:fade;
+	animation-duration:1s;
+}
+
+@keyframes fade {
+	from {opacity: 0.4;}
+	to {opacity: 1;}
+}
+
+
+.img {
+	width: 90%;
+	height: 360px;
+	margin: 15px;
+}
+.img-container {
+    background-color: rgba(141, 178, 220, 0.36);
+    text-align: center;
 }
